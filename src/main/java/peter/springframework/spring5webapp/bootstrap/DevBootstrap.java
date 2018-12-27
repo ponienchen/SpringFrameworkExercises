@@ -10,6 +10,10 @@ import peter.springframework.spring5webapp.repositories.AuthorRepository;
 import peter.springframework.spring5webapp.repositories.BookRepository;
 import peter.springframework.spring5webapp.repositories.PublisherRepository;
 
+//@Component annotation will make the annotated class a spring bean,
+//which will then be wired up by Spring context. If you need to
+//auto-wire other variables upon class instantiation via dependency injection,
+//declare those variables and a constructor for the class.
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 

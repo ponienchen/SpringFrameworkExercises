@@ -5,6 +5,11 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+//@Entity annotation converts a model object to JPA
+//JPA: Java Persistence API, the official API for working with relational data in Java
+// * It is a bridge between Java objects & how data is stored in databases.
+// * ORM - Object Relational Mapping
+// * Database agnostic
 @Entity
 public class Book {
 

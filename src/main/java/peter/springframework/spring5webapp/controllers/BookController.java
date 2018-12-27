@@ -25,7 +25,7 @@ public class BookController {
     public String getBooks(Model model) {
 //      bookRepository will use Spring Data JPA, which will use Hibernate to
 //      retrieve a list of books from the database.
-        model.addAttribute("books", bookRepository.findAll());
+        model.addAttribute("books", this.bookRepository.findAll());
 
 //      This tells the Spring MVC to associate this with a view called "books".
         return "books";
